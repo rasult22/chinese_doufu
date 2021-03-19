@@ -7,12 +7,15 @@
 	<div class="questionBox" id="app">
 
 		<!-- transition -->
+      
 		<transition :duration="{ enter: 500, leave: 300 }" enter-active-class="animated zoomIn" leave-active-class="animated zoomOut" mode="out-in">
-
+         
 			<!--qusetionContainer-->
 			<!-- <div class="questionContainer" v-if="false" v-bind:key="questionIndex"> -->
 			<div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
-
+            <a href="https://taplink.cc/chinese_doufu"  style="font-size:12px; position: absolute; top: 14px; left: 14px; text-decoration:none; color:cornflowerblue;  font-family:Montserrat, sans-serif;">
+               Вернуться в taplink
+            </a>
 				<header>
 					<h1 class="title is-6">Chinese Doufu</h1>
           <div class="logo">
@@ -694,8 +697,9 @@ body {
       }
 
       .questionFooter {
-				background:rgba(0,0,0,0.025);
-				border-top: 1px solid rgba(0,0,0,0.1);
+         background:rgba(0,0,0,0.025);
+         border-top: 1px solid rgba(0,0,0,0.1);
+         overflow: auto;
          width: 100%;
          align-self: flex-end;
 
