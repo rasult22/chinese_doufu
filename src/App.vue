@@ -182,9 +182,9 @@ let quiz = {
             text: "Какое предложение содержит общий вопрос?",
             responses: [
                { text: "这是什么?" },
-               { text: "他是谁?", correct: true },
+               { text: "他是谁?" },
                { text: "那是书还是报?" },
-               { text: "这是车, 是吗?" }
+               { text: "这是车, 是吗?", correct: true }
             ]
          },
          {
@@ -203,16 +203,16 @@ let quiz = {
                {
                   text: "18"
                },
-               { text: "14" },
-               { text: "16", correct: true }
+               { text: "14" , correct: true},
+               { text: "16" }
             ]
          },
          {
             text:
                "Какая графема общая в иероглифах 忙, 怆, 沁, 恭, 密 ?",
             responses: [
-               { text: "小", correct: true  },
-               { text: "心" },
+               { text: "小" },
+               { text: "心", correct: true },
                { text: "人" },
                { text: "刀" }
             ]
@@ -232,8 +232,8 @@ let quiz = {
             text: "Найдите лишнее слово ",
             responses: [
                { text: "火" },
-               { text: "车", correct: true },
-               { text: "也" },
+               { text: "车" },
+               { text: "也", correct: true },
                { text: "手" }
             ]
          },
@@ -262,18 +262,9 @@ let quiz = {
             text: "Вставьте недостающее слово:  __很多。",
             responses: [
                { text: "他 " },
-               { text: "大"},
+               { text: "大", correct: true },
                { text: "没" },
-               { text: "人", correct: true  }
-            ]
-         },
-         {
-            text: "Каким членом является выделенное слово? 这也是你的东西。",
-            responses: [
-               { text: "подлежащее " },
-               { text: "сказуемое"},
-               { text: "определение4" },
-               { text: "дополнение", correct: true  }
+               { text: "人" }
             ]
          },
          {
@@ -286,12 +277,12 @@ let quiz = {
             ]
          },
          {
-            text: "Выберите нужный вопрос к подчеркнутой части предложения 他是|你爸爸|的医生。",
+            text: "Выберите нужный вопрос к части предложения между тире --他--是你爸爸的医生。",
             responses: [
                { text: "什么 " },
-               { text: "谁的", correct: true },
+               { text: "谁的"},
                { text: "哪个" },
-               { text: "谁" }
+               { text: "谁", correct: true  }
             ]
          },
          {
@@ -307,18 +298,18 @@ let quiz = {
             text: "Подберите антоним к слову 新 ?",
             responses: [
                { text: "老 " },
-               { text: "旧"},
-               { text: "久", correct: true },
+               { text: "旧", correct: true},
+               { text: "久" },
                { text: "歹"  }
             ]
          },
          {
             text: "В каком иероглифе 8 черт ?",
             responses: [
-               { text: "青 " },
+               { text: "青 ", correct: true  },
                { text: "食"},
                { text: "身" },
-               { text: "音", correct: true  }
+               { text: "音" }
             ]
          },
          {
@@ -367,7 +358,7 @@ let quiz = {
             ]
          },
          {
-            text: "Вставьте недостающий иероглиф 你七点上课还是 点上课 ？",
+            text: "Вставьте недостающий иероглиф 你七点上课还是___点上课 ？",
             responses: [
                { text: "八", correct: true },
                { text: "人"},
@@ -380,17 +371,8 @@ let quiz = {
             responses: [
                { text: "玉" },
                { text: "鱼"},
-               { text: "语", correct: true },
-               { text: "月" }
-            ]
-         },
-         {
-            text: "Сколько черт в иероглифе 回 ?",
-            responses: [
-               { text: "2 " },
-               { text: "3"},
-               { text: "4" },
-               { text: "6", correct: true  }
+               { text: "语" },
+               { text: "月", correct: true }
             ]
          },
          {
@@ -403,10 +385,10 @@ let quiz = {
             ]
          },
          {
-            text: " Выберите нужный вопрос к подчеркнутой части предложения 今天|我妈妈|买英文报。",
+            text: " Выберите нужный вопрос к части предложения, находящейся между тире  今天我妈妈买--英文报--。",
             responses: [
-               { text: "谁", correct: true },
-               { text: "什么"},
+               { text: "谁"},
+               { text: "什么", correct: true },
                { text: "怎么样?" },
                { text: "谁的" }
             ]
@@ -441,9 +423,9 @@ let quiz = {
          {
             text: "Найдите ошибку:",
             responses: [
-               { text: "四位鸟 " },
+               { text: "四位鸟", correct: true },
                { text: "两条鱼"},
-               { text: "一块手表", correct: true },
+               { text: "一块手表" },
                { text: "六支毛笔" }
             ]
          },
@@ -486,10 +468,10 @@ let quiz = {
          {
             text: "Подберите ответ на вопрос 他是什么人?",
             responses: [
-               { text: "他是我爸爸的朋友。" },
+               { text: "他是我爸爸的朋友。", correct: true },
                { text: "我不认识她"},
                { text: "他很好。" },
-               { text: "是汉学家。", correct: true  }
+               { text: "是汉学家。"}
             ]
          },
          {
@@ -523,16 +505,16 @@ let quiz = {
             text: "Вставьте недостающий иероглиф 朋 ",
             responses: [
                { text: "双 " },
-               { text: "又", correct: true },
-               { text: "友" },
+               { text: "又" },
+               { text: "友", correct: true },
                { text: "朋" }
             ]
          },
          {
             text: "Найдите ошибку :",
             responses: [
-               { text: "他在吃第六个苹果。", correct: true  },
-               { text: "我是第二年级的学生。"},
+               { text: "他在吃第六个苹果。" },
+               { text: "我是第二年级的学生。", correct: true },
                { text: "猫喝第三盘牛奶。" },
                { text: "请大家看第十课的课文。" }
             ]
