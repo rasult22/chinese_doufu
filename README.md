@@ -1,5 +1,7 @@
 # chinese_doufu
 
+try https://rasult22.github.io/chinese_doufu/dist/index.html
+
 ## Project setup
 ```
 npm install
